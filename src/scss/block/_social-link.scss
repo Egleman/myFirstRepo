@@ -1,0 +1,44 @@
+.social-link {
+    padding-top: 20px;
+    &__wrapper {
+        padding: 0px 40px;
+    }
+    &__body {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        background: #FFFCFC;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+    }
+    &__link {
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        gap: 10px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #F2F2F2;
+        svg {
+            display: flex;
+            flex-shrink: 0;
+        }
+        &_vk {
+            background: #0077FF;
+        }
+        &_tg {
+            background: #0088CC;
+        }
+        &_yt {
+            background: #FF0000;
+        }
+        &_gh {
+            background: #000000;
+            grid-column: 1 / span 3;
+        }
+    }
+}

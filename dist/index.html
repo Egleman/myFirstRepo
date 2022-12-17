@@ -1,20 +1,27 @@
-@@include('html/head.html', {
-    "title": "Главная"
-})
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
 <body>
-    @@include('html/header.html', {})
+    
+
     <main>
         <section class="tap-link">
             <div class="container">
                 <div class="tap-link__wrapper">
                     <div class="tap-link__bg">
-                        <!-- <img src="./img/background.jpg" alt="background"> -->
+                        <!-- <picture><source srcset="./img/background.webp" type="image/webp"><img src="./img/background.jpg" alt="background"></picture> -->
                     </div>
                     <h1 class="tap-link__hello">Привет</h1>
                     <p class="tap-link__desc">Делаю сайты на заказ:<br>Лендинги, корпоративые сайты </p>
                     <div class="tap-link__card">
                         <div class="tap-link__card-img">
-                            <img src="./img/avatar.jpg" alt="avatar">
+                            <picture><source srcset="./img/avatar.webp" type="image/webp"><img src="./img/avatar.jpg" alt="avatar"></picture>
                         </div>
                         <div class="tap-link__card-name">Сергей Мартынов</div>
                         <div class="tap-link__card-job">frontend developer</div>
@@ -52,7 +59,7 @@
             </div>
         </section>
     </main>
-    @@include('html/footer.html', {})
+    
     <script src="js/app.min.js"></script>
 </body>
 </html>
